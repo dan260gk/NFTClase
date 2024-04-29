@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Upload Form</title>
+</head>
+<body>
+    <h2>Image Upload Form</h2>
+    <form action="/uploadNFT" method="POST" enctype="multipart/form-data">
+        <label for="image">Select Image:</label>
+        <input type="file" id="image" name="image" accept="image/*" required>
+        <br><br>
+        <label for="name">NFT name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description" required>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
